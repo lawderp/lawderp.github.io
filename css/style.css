@@ -193,6 +193,8 @@ button {
     bottom: -280px;
     width: 95vw;
     height: 400px;
+    padding-left: 48px;
+    padding-right: 48px;
     background: #66C3CC;
     z-index: 1;
     border-top-right-radius: 2px;
@@ -204,7 +206,7 @@ button {
     margin-left: calc(50vw - 600px);
     margin-top: 72px;
     min-width: 1000px;
-    max-width: 95%;
+    max-width: 1200px;
     /* text-align: center; */
 }
 
