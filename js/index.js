@@ -3,10 +3,17 @@
 /*********************** Header scroll logic ****************************/
 window.onscroll = function() {
     var header = document.querySelector('.header');
+    var links = document.querySelectorAll("li > a");
     if (window.scrollY > 55) {
-      header.classList.add('scrolled-header');
+        header.classList.add('scrolled-header');
+        for (i=0; i<links.length; i++) {
+            links[i].classList.add('scrolled-link');
+        }
     } else {
-      header.classList.remove('scrolled-header');
+        header.classList.remove('scrolled-header');
+        for (i=0; i<links.length; i++) {
+            links[i].classList.remove('scrolled-link');
+        }
     }
   }
 
@@ -24,7 +31,7 @@ var cashBenefits = document.querySelector('.cash-benefits');
  
 function parallax() {
     var scrolltop = window.pageYOffset; // get number of pixels document has scrolled vertically 
-    cashBenefits.style.bottom = -280 + (scrolltop * .2) + 'px'; // move bubble1 at 20% of scroll rate
+    cashBenefits.style.bottom = -280 + (scrolltop * .25) + 'px'; // move bubble1 at 20% of scroll rate
 }
  
 window.addEventListener('scroll', function(){ // on page scroll
