@@ -526,13 +526,13 @@ footer {
     .navigation {
         width: calc(100% - 32px);
         margin: 0 16px auto;
-        height: 48px;
+        height: 50px;
     }
     
     .logo {
         position: absolute;
         left: 16px;
-        top: 16px;
+        top: 17px;
         width: 60px;
         height: 16px;
     }
@@ -544,7 +544,7 @@ footer {
     .hamburger {
         position: absolute;
         right: 16px;
-        top: 16px;
+        top: 17px;
         margin-bottom: 16px;
         display: inline-block;
     }
@@ -559,7 +559,7 @@ footer {
         position: relative;
     }
    .responsive {
-        height: 256px;
+        height: 320px;
     }
     .responsive > .nav > .right-nav {
         display: block;
@@ -569,10 +569,11 @@ footer {
     }
 
     li {
-        margin: 24px 0;
+        margin: 40px 0;
     }
 
     li > a {
+        font-size: 18px;
         display: block;
         position: static;
         color: #143859;
@@ -692,11 +693,11 @@ footer {
     }
 
     .label {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         color: #B9C3CD;
         margin: 0;
-        margin-bottom: 4px;
+        margin-bottom: 2px;
         /* text-transform: uppercase; */
     }
 
@@ -719,24 +720,33 @@ footer {
         width: 8%;
     }
 
+
     .feeDiv {
         width: 40%;
     }
 
-    .minus-bottom {
-        /* margin-top: 12px; */
+
+    .equals {
+       width: 8%; 
+    }
+    .equals .minus {
+        width: 100%;
     }
 
     .calcBox {
         margin: 8px;
-        background: none;
+        /* background: #2B4C6A; */
         padding: 8px 8px;
-        border-radius: 0px;
+        /* border-radius: 4px; */
     }
 
     .saveDiv {
+        width: 60%;
         background: #4D99A9;
         border-radius: 4px;
+        margin-left: 16px;
+        margin-top: 16px;
+        padding: 16px 8px;
     } 
 
     .saveLabel {
