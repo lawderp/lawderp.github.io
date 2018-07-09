@@ -19,19 +19,32 @@ window.onscroll = function() {
 
 
 /******** hamburger logic *********/
-// add class to right nav
 function mobileMenu() {
     var nav = document.querySelector(".navigation");
     var header = document.querySelector('.header');
     console.log(nav);
     if (nav.className === "navigation") {
         header.style.background = "white";
-        nav.className += " responsive";
+        nav.className += " open";
     } else {
         nav.className = "navigation";
         header.style.background = "";
     }
 }
+
+// function collapse() {
+//     var links = document.querySelectorAll("li > a");
+//     var nav = document.querySelector(".navigation");
+//     for (i=0; i<links.length; i++) {
+//         if (nav.className === "navigation responsive") {
+
+//         }
+         
+//         links[i].classList.remove('scrolled-link');
+//     } 
+
+// }
+
 
 
 /************ parallax logic ************* */
