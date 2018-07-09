@@ -32,6 +32,15 @@ function mobileMenu() {
     }
 }
 
+function isMobile() {
+    var mq = window.matchMedia( "(max-width: 600px)" );
+    if (mq.matches) {
+        mobileMenu();
+    }
+}
+
+
+
 // function collapse() {
 //     var links = document.querySelectorAll("li > a");
 //     var nav = document.querySelector(".navigation");
