@@ -55,7 +55,6 @@ li > a:before {
     bottom: -4px;    
     width: 0%;
     transition: all 0.18s ease-out;
-
 }
 
 .scrolled-link {
@@ -108,6 +107,10 @@ path {
 
 li {
     margin-left: 32px;
+}
+
+.hamburger {
+    display: none;
 }
 
 
@@ -523,15 +526,56 @@ footer {
     .navigation {
         width: calc(100% - 32px);
         margin: 0 16px auto;
+        height: 48px;
     }
     
     .logo {
+        position: absolute;
+        left: 16px;
+        top: 16px;
         width: 60px;
         height: 16px;
     }
     
     .right-nav {
         display: none;
+    }
+
+    .hamburger {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        margin-bottom: 16px;
+        display: inline-block;
+    }
+    .hamburger div {
+        height: 2px;
+        width: 16px;
+        margin-top: 3px;
+        background: #143859;
+    }
+
+    .responsive > .nav {
+        position: relative;
+    }
+   .responsive {
+        height: 256px;
+    }
+    .responsive > .nav > .right-nav {
+        display: block;
+        text-align: left;
+        margin-top: 64px;
+        padding-left: 8px;        
+    }
+
+    li {
+        margin: 24px 0;
+    }
+
+    li > a {
+        display: block;
+        position: static;
+        color: #143859;
     }
 
 
@@ -623,6 +667,7 @@ footer {
         width: calc(100% - 32px);
         margin: 0 16px auto;
         padding: 0px;
+        padding-top: 48px;
         padding-bottom: 500px;
     }
 
@@ -702,14 +747,11 @@ footer {
     .number {
         font-size: 16px;
     }
-
     .saveDiv > .number {
         font-size: 24px;
     }
 
     /****** Charlotte *****/
-
-
     .charlotte-content {
         width: calc(100% - 32px);
         margin: 0 16px auto;
@@ -719,7 +761,6 @@ footer {
 
 
     /****** FAQ ******/
-
     .faq-content {
         width: calc(100% - 32px);
         margin: 0 16px auto;
@@ -751,14 +792,11 @@ footer {
 
     .terms {
         display: flex;
+        margin-top: 64px;
     }
     .terms > a {
         margin: 0;
         margin-right: 16px;
-        margin-top: 40px;
-        color: #8A9CAC;
-        font-size: 12px;
-        cursor: pointer;
     }
 
 

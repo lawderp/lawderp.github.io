@@ -18,6 +18,22 @@ window.onscroll = function() {
   }
 
 
+/******** hamburger logic *********/
+// add class to right nav
+function mobileMenu() {
+    var nav = document.querySelector(".navigation");
+    var header = document.querySelector('.header');
+    console.log(nav);
+    if (nav.className === "navigation") {
+        header.style.background = "white";
+        nav.className += " responsive";
+    } else {
+        nav.className = "navigation";
+        header.style.background = "";
+    }
+}
+
+
 /************ parallax logic ************* */
 // Create cross browser requestAnimationFrame method:
 window.requestAnimationFrame = window.requestAnimationFrame
