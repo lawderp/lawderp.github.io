@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color: #143859;
 }
 
 
@@ -11,6 +12,7 @@ h1 {
     font-size: 48px;
     font-weight: 400;
     margin-bottom: 64px;
+    color: #143859;
     font-family: 'Playfair Display', serif;
 
 }
@@ -227,6 +229,7 @@ button {
     width: 300px;
     height: 160px;
     background: #75C9D1;
+    /* background: url('../icons/slider-icon.png'); */
     line-height: 160px;
     border-radius: 4px;
     text-align: center;
@@ -358,15 +361,23 @@ input {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
     width: 80px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: white; /* Green background */
+    height: 31px; /* Slider handle height */
+    /* background-color: white;  */
+    background: url('../icons/slider-icon.png');
+    background-size: 100%;
     cursor: pointer; /* Cursor on hover */
     border-radius: 200px;
-    transition: all 0.15s ease-out;
+    transition: all 0.2s ease-out;
+    /* border: solid 0px white; */
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.04), 0px 3px 8px rgba(0,0,0,0.08);
 
 }
 .slider::-webkit-slider-thumb:hover {
-    background: #66C3CC;
+    /* background: #66C3CC; */
+    /* border: solid 2px #66C3CC; */
+    /* box-shadow: 0px 0px 16px rgba(0,0,0,0.30), 0px 10px 24px rgba(0,0,0,0.30); */
+    box-shadow: 0px 0px 20px 3px rgba(102,195,204,0.40);
+
 }
 
 .slider::-moz-range-thumb {
