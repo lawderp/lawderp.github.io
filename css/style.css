@@ -9,8 +9,10 @@
 
 h1 {
     font-size: 48px;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 64px;
+    font-family: 'Playfair Display', serif;
+
 }
 
 .h1-white {
@@ -20,6 +22,7 @@ h1 {
 h2 {
     font-size: 28px;
     font-weight: 300;
+    /* font-family: 'Playfair Display', serif; */
 }
 
 .h2-white {
@@ -121,12 +124,12 @@ li {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(20,56,89,0.3), rgba(20,56,89,0)), url("../images/house1.jpeg");
+    background: linear-gradient(rgba(20,56,89,0.4) 30%, rgba(20,56,89,0)), url("../images/house1.jpeg");
 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-blend-mode: darken;
+    /* background-blend-mode: darken; */
 } 
 
 .splash-content {
@@ -139,7 +142,7 @@ li {
 
 .h1-splash {
     margin-bottom: 32px;
-    margin-top: 64px;
+    margin-top: 96px;
 }
 
 .splash-text {
@@ -501,10 +504,45 @@ footer {
 }
 
 
+
+
+
+/********************* FAQ page ***************/
+
+/* .faq-splash {
+    margin-top: 128px;
+    text-align: center;
+} */
+
+.faq-header {
+    background: white;
+}
+
+.faq-header a {
+    color: #143859;
+}
+
+.faq-splash {
+    background: white;
+    width: 100vw;
+    height: 1500px;
+    padding-top: 128px;
+}
+
+.faq-div1 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
 /******************** small breakpoint *************************/
 
-@media all and (max-width: 600px) {
-    
+@media all and (max-width: 600px) { 
 
     /****** text styles ******/
     h1 {
@@ -518,13 +556,13 @@ footer {
     .navigation {
         width: calc(100% - 32px);
         margin: 0 16px auto;
-        height: 50px;
+        height: 52px;
     }
     
     .logo {
         position: absolute;
         left: 16px;
-        top: 17px;
+        top: 18px;
         width: 60px;
         height: 16px;
     }
@@ -580,7 +618,6 @@ footer {
 
     .open > .hamburger span:nth-child(1) {
         margin-top: 1px;
-        margin-left: 8px;
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
@@ -592,7 +629,6 @@ footer {
     }
     .open > .hamburger span:nth-child(3) {
         margin-top: 6px;
-        margin-left: 8px;
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
@@ -632,18 +668,20 @@ footer {
     .splash {
         width: 100vw;
         height: auto;
+        background: linear-gradient(rgba(20,56,89,0.45) 7%, rgba(20,56,89,0) 18%), url("../images/house1.jpeg");
         background-size: 300% auto;
         background-position: 50% 0%;
-        /* background-color: linear-gradient(45deg, #143859, white);
-        background-color: #143859; */
-
-        /* background-blend-mode: overlay; */
+        background-blend-mode: normal;
     } 
     
     .splash-content {
         width: calc(100% - 32px);
         margin: 0 16px auto;
         padding: 8px;
+    }
+
+    .h1-splash {
+
     }
     
     .splash-text {
@@ -864,6 +902,16 @@ footer {
 
 
 
+
+    /******** FAQ *********/
+    .faq-div1 {
+        width: calc(100% - 32px);
+        margin: 16px auto;
+    }
+
 }
+
+
+
 
 
