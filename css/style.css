@@ -546,7 +546,7 @@ footer {
 
     /****** text styles ******/
     h1 {
-        font-size: 32px;
+        font-size: 34px;
         font-weight: 300;
         margin-bottom: 64px;
     }
@@ -560,11 +560,14 @@ footer {
     }
     
     .logo {
+        width: 60px;
+        height: 16px;
+    }
+
+    .navigation .logo {
         position: absolute;
         left: 16px;
         top: 18px;
-        width: 60px;
-        height: 16px;
     }
     
     .right-nav {
@@ -874,6 +877,11 @@ footer {
     footer {
         height: auto;
     } 
+
+    footer .logo {
+
+    }
+
 
     .footer-content {
         width: calc(100% - 32px);
