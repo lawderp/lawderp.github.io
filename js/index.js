@@ -41,20 +41,6 @@ function isMobile() {
 
 
 
-// function collapse() {
-//     var links = document.querySelectorAll("li > a");
-//     var nav = document.querySelector(".navigation");
-//     for (i=0; i<links.length; i++) {
-//         if (nav.className === "navigation responsive") {
-
-//         }
-         
-//         links[i].classList.remove('scrolled-link');
-//     } 
-
-// }
-
-
 
 /************ parallax logic ************* */
 // Create cross browser requestAnimationFrame method:
@@ -69,7 +55,7 @@ var cashBenefits = document.querySelector('.cash-benefits');
  
 function parallax() {
     var scrolltop = window.pageYOffset; // get number of pixels document has scrolled vertically 
-    cashBenefits.style.bottom = -320 + (scrolltop * .25) + 'px'; // move bubble1 at 20% of scroll rate
+    cashBenefits.style.bottom = -350 + (scrolltop * .3) + 'px'; // move bubble1 at 20% of scroll rate
 }
  
 window.addEventListener('scroll', function(){ // on page scroll

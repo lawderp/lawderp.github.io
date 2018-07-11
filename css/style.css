@@ -2,6 +2,8 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     color: #143859;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -200,9 +202,9 @@ button:hover .chevron {
 
 .cash-benefits {
     position: absolute;
-    bottom: -320px;
+    bottom: -350px;
     width: 95vw;
-    height: 400px;
+    height: 420px;
     padding-left: 48px;
     padding-right: 48px;
     background: #66C3CC;
@@ -222,6 +224,7 @@ button:hover .chevron {
 
 .h2-benefits {
     color: white;
+    font-weight: 400;
     /* margin-left: calc(200px - 120px); */
 }
 
@@ -234,15 +237,22 @@ button:hover .chevron {
 
 .benefit-step {
     display: table-cell;
-    /* min-width: 200px;
-    max-width: 300px; */
     width: 300px;
     height: 160px;
-    background: #75C9D1;
-    /* background: url('../icons/slider-icon.png'); */
-    line-height: 160px;
     border-radius: 4px;
-    text-align: center;
+}
+
+.benefit-step h2 {
+    font-size: 40px;
+    margin: 0;
+}
+.benefit-step h5 {
+    color: #143859;
+    font-weight: 500;
+    margin-top: 8px;
+}
+.benefit-step p {
+    color: white;
 }
 
 
@@ -352,7 +362,6 @@ button:hover .chevron {
 .how-bottom p {
     color: #A1AFBD;
     font-size: 14px;
-    font-weight: 300;
 }
 
 .how-button {
@@ -820,6 +829,7 @@ footer {
         width: calc(100% - 32px);
         margin: 0 16px auto;
         margin-top: 0px;
+        /* margin-left: 24px; */
     }
     
     
@@ -829,15 +839,15 @@ footer {
         flex-direction: column;
         justify-content: space-around;
         margin: 0;
-
+        margin-top: 48px;
     }
     
     .benefit-step {
         width: 100%;
-        height: 160px;
-        background: #75C9D1;
-        line-height: 160px;
-        margin-bottom: 16px;
+        /* height: 160px; */
+        /* background: #75C9D1; */
+        /* line-height: 160px; */
+        margin-bottom: 48px;
     }
 
 
