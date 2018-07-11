@@ -11,6 +11,7 @@
 h1 {
     font-size: 48px;
     font-weight: 400;
+    margin-top: 0;
     margin-bottom: 64px;
     color: #143859;
     font-family: 'Playfair Display', serif;
@@ -40,8 +41,9 @@ h5 {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     color: #72889B;
+    margin-bottom: 16px;
 }
 
 p {
@@ -263,14 +265,14 @@ button:hover .chevron {
     padding: 48px;
 }
 
-.how-top {
+.how-header {
     padding: 48px;
 }
 
-.how-top > h5 {
+.how-header > h5 {
     margin-bottom: 16px;
 }
-.how-top > h1 {
+.how-header > h1 {
     margin-top: 0;
 }
 
@@ -371,6 +373,10 @@ button:hover .chevron {
     padding-bottom: 128px;
 } 
 
+.pricing-header {
+    margin-top: 64px;
+}
+
 .pricing-top {
     width: 100vw;
     /* height: 600px; */
@@ -412,7 +418,7 @@ button:hover .chevron {
     padding: 48px;
     width: 800px;
     margin: 0 auto;
-    margin-top: -400px;
+    margin-top: -420px;
     border-radius: 4px;
     box-shadow: 0px 0px 40px rgba(20,56,89,0.20), 0px 24px 64px rgba(20,56,89,0.30);
 }
@@ -845,11 +851,11 @@ footer {
         padding-top: 48px;
     }
 
-    .how-top {
+    .how-header {
         padding: 0;
         padding-top: 48px;
     }
-    .how-top h1 {
+    .how-header h1 {
         margin-bottom: 32px;
     }
 
@@ -917,6 +923,10 @@ footer {
         padding: 0px;
         padding-top: 48px;
         padding-bottom: 500px;
+    }
+    .pricing-header {
+        margin-top: 48px;
+        width: 100%;
     }
 
     .price-description {
