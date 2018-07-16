@@ -15,7 +15,8 @@
         
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Radley:400,400i" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet"> -->
     </head>
 
     <body>
@@ -25,7 +26,10 @@
         
         <header class="header">
             <nav class="navigation">
-                <div class="logo"></div>
+                <div class="logo logo-header">
+                    <img class="novel-logo" src="logo/no-icon.svg">
+                    <p class="logo-text"><span class="wordmark-1">novel</span><span class="wordmark-2">offer</span></p>
+                </div>
                 <div class="nav">
                     <ul class="right-nav">
                         <li>
@@ -52,37 +56,54 @@
         </header>
 
         <div class="splash">
-            <!-- <div class="splash-overlay"></div> -->
-            <div class="splash-content">
-                <h1 class="h1-splash h1-white">Buy your home with certainty</h1>
-                <p class="splash-text p-white">We give you cash so you can present an all-cash offer.</p>
-                <p class="splash-text p-white">You close on your dream home, and save 3% in the process.</p>
-                <button class="splash-button">
-                    Apply now
-                    <img class="chevron" src="icons/chevron-right.svg">
-                </button>
+            <div class="splash-fade">
+                <div class="image-frame">
+                    <div class="right-image"></div>
+                </div>
+                <div class="hero-frame">
+                    <div class="left-frame">
+                        <div class="left-content">
+                            <div class="logo logo-hero">
+                                <img class="novel-logo" src="logo/no-icon.svg">
+                                <p class="logo-text"><span class="wordmark-1">novel</span><span class="wordmark-2">offer</span></p>
+                            </div>
+                            <div class="hero-text">
+                                <h1>A new approach to securing your dream home</h1>
+                                <p>With all-cash, Novel Offer gives you the ultimate hand in negotiating the best price for your new home.</p>
+                                <button class="splash-button">
+                                    Apply now
+                                    <img class="chevron" src="icons/chevron-white.svg">
+                                </button>
+                            </div>  
+                        </div>         
+                    </div>
+                    <div class="right-frame"></div>
+                </div>
             </div>
-            <div class="cash-benefits">
-                <div class="cash-content">
-                    <h2 class="h2-benefits">All-cash is king.</h1>
-                    <div class="benefits">
-                        <div class="benefit-step">
-                            <h2>97%</h2>
-                            <h5>more likely to win the bid</h5>
-                            <p>Selllers love the certainty of a Company X offer because it’s guaranteed to close. This is even better than investors who win with cash offers.</p>
-                        </div>
-                        <div class="benefit-step">
-                            <h2>5%</h2>
-                            <h5>savings</h5>
-                            <p>Because of the certainty it provides, Company X offers receive a 5% discount on average. So a $200,000 home = $10,000 in savings.</p>
 
-                        </div>
-                        <div class="benefit-step">
-                            <h2>X days</h2>
-                            <h5>faster to close</h5>
-                            <p>Can we get this stat? [Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut]</p>
 
-                        </div>
+        </div>
+
+
+        <div class="cash-benefits">
+            <div class="cash-content">
+                <h2 class="h2-benefits">All-cash is king.</h1>
+                <div class="benefits">
+                    <div class="benefit-step">
+                        <h2>97%</h2>
+                        <h5>more likely to win the bid</h5>
+                        <p>Selllers love the certainty of a Company X offer because it’s guaranteed to close. This is even better than investors who win with cash offers.</p>
+                    </div>
+                    <div class="benefit-step">
+                        <h2>5%</h2>
+                        <h5>savings</h5>
+                        <p>Because of the certainty it provides, Company X offers receive a 5% discount on average. So a $190,000 Novel Offer is as strong as a $200,000 offer with traditional financing.</p>
+
+                    </div>
+                    <div class="benefit-step">
+                        <h2>X days</h2>
+                        <h5>faster to close</h5>
+                        <p>Can we get this stat? [Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut]</p>
                     </div>
                 </div>
             </div>
@@ -140,7 +161,7 @@
                     <p>Interested? Let's get started.</p>
                     <button class="how-button">
                         Apply now
-                        <img class="chevron" src="icons/chevron-right.svg">
+                        <img class="chevron" src="icons/chevron-orange.svg">
                     </button>
                 </div>
             </div>
@@ -161,41 +182,39 @@
             </div>
  
             <div class="slider-container">
-                <h2 class="h2-white">Save thousands</h2>
-                <p class="label">Purchase Price</p>
-                <p class="price">placeholder</p>
-                <input type="range" min="100000" max="900000" value="500000" class="slider">
-                <div class="calculations">
-                    <div class="discountDiv calcBox">
-                        <p class="label">5% discount</p>
-                        <p class="discount number">$25,000</p>
+                <div class="slider-header">
+                    <h2>The biggest savings anywhere</h2>
+                </div>
+                <div class="slider-middle">
+                    <div class="slider-left">
+                        <p class="label">Purchase Price</p>
+                        <p class="price">placeholder</p>
+                        <input type="range" min="100000" max="900000" value="500000" class="slider">
                     </div>
-                    <div class="minus"></div>
-                    <div class="feeDiv calcBox">
-                        <p class="label">1.95% fee</p>
-                        <p class="fee number">$9,750</p>
+                    <div class="slider-arrow">
+                        <img class="arrow-right" src="icons/arrow-right.svg">
                     </div>
-                    <div class="equals">
-                        <div class="minus"></div>
-                        <div class="minus minus-bottom"></div>
-                    </div>
-                    <div class="saveDiv calcBox">
-                        <p class="label saveLabel">3.05% in savings</p>
-                        <p class="savings number">$15,250</p>
+                    <div class="slider-right">
+                        <p class="label saveLabel">You save 3.05%</p>
+                        <p class="savings">$15,250</p>
                     </div>
                 </div>
+                <div class="slider-footer">
+                    <p>Savings based on average 5% discount (<span class="discount">$25,000</span>) minus 1.95% fee (<span class="fee">$9,750</span>)</p>
+                </div>    
             </div>
         </div>
 
         <div class="charlotte">
             <div class="charlotte-content">
-                <h2>Currently available in Charlotte, NC</h2>
+                <h2>Learn more about buying your home through Company X</h2>
+                <p>Check out the questions below, or go to our full FAQ</p>
             </div>
         </div>
         <div class="faq-highlight">
             <div class="faq-content">
-                <h3>Learn more about buying your home through Company X</h3>
-                <p>A couple of FAQs can be highlighted here, with link to full</p>
+                <h3>Currently available in Charlotte, NC</h3>
+                <p>Our service is currently only available for homes in Charlotte, but we have plans to expand soon.</p>
             </div>
         </div>
 

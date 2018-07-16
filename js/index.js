@@ -3,14 +3,19 @@
 /*********************** Header scroll logic ****************************/
 window.onscroll = function() {
     var header = document.querySelector('.header');
+    var headerLogo = document.querySelector('.logo-header');
     var links = document.querySelectorAll("li > a");
     if (window.scrollY > 55) {
         header.classList.add('scrolled-header');
+        headerLogo.classList.add('scrolled-logo-header');
         for (i=0; i<links.length; i++) {
             links[i].classList.add('scrolled-link');
         }
     } else {
         header.classList.remove('scrolled-header');
+        headerLogo.classList.remove('scrolled-logo-header');
+        // headerLogo.style.opacity = 0;
+
         for (i=0; i<links.length; i++) {
             links[i].classList.remove('scrolled-link');
         }
@@ -32,6 +37,9 @@ function mobileMenu() {
     }
 }
 
+/**** switching parallax for mobile ****/
+
+
 function isMobile() {
     var mq = window.matchMedia( "(max-width: 600px)" );
     if (mq.matches) {
@@ -50,12 +58,18 @@ window.requestAnimationFrame = window.requestAnimationFrame
  || window.msRequestAnimationFrame
  || function(f){setTimeout(f, 1000/60)};
  
-var cashBenefits = document.querySelector('.cash-benefits');
+var heroFrame = document.querySelector('.hero-frame');
+var imageFrame = document.querySelector('.image-frame');
 // var bubble2 = document.getElementById('bubbles2');
  
 function parallax() {
-    var scrolltop = window.pageYOffset; // get number of pixels document has scrolled vertically 
-    cashBenefits.style.bottom = -350 + (scrolltop * .3) + 'px'; // move bubble1 at 20% of scroll rate
+    var scrolltop = window.pageYOffset; 
+    var mq = window.matchMedia( "(max-width: 600px)" );
+    if (mq.matches) {
+        imageFrame.style.top = 0 + (scrolltop * .3) + 'px';
+    } else {
+        heroFrame.style.top = 0 + (scrolltop * .18) + 'px';
+    }
 }
  
 window.addEventListener('scroll', function(){ // on page scroll
