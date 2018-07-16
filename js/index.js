@@ -66,9 +66,9 @@ function parallax() {
     var scrolltop = window.pageYOffset; 
     var mq = window.matchMedia( "(max-width: 600px)" );
     if (mq.matches) {
-        imageFrame.style.top = 0 + (scrolltop * .3) + 'px';
+        imageFrame.style.top = 0 + (scrolltop * .5) + 'px';
     } else {
-        heroFrame.style.top = 0 + (scrolltop * .18) + 'px';
+        heroFrame.style.top = 0 + (scrolltop * .2) + 'px';
     }
 }
  
