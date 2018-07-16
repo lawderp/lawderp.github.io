@@ -951,10 +951,12 @@ footer .wordmark-1, footer .wordmark-2 {
         top: 0;
         width: 100vw;
         height: 60vh;
+        /* background-position-x: 50%; */
     }
-    .right {
+    .right-image {
         height: 100%;
         width: 100%;
+        background-position: 40%;
     }
     
     .hero-frame {
