@@ -170,7 +170,7 @@ li {
 .splash-fade {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(210deg, transparent 60%, #f8f8f8 95%);
+    background-image: linear-gradient(210deg, transparent 60%, #f8f8f8 90%);
     background-size: cover;
 }
 
@@ -311,6 +311,7 @@ button:hover .chevron {
 .h2-benefits {
     color: #333;
     font-weight: 400;
+    font-size: 28px;
     /* margin-left: calc(200px - 120px); */
 }
 
@@ -323,7 +324,7 @@ button:hover .chevron {
 
 .benefit-step {
     display: table-cell;
-    width: 300px;
+    width: 330px;
     height: 160px;
     border-radius: 4px;
 }
@@ -399,6 +400,9 @@ button:hover .chevron {
 .how-fourth {
     height: 204px;
 }
+.how-fifth {
+    height: 204px;
+}
 
 .a {
     width: 380px;
@@ -419,22 +423,25 @@ button:hover .chevron {
 .step {
     height: auto;
     background: #FFF7F0;
+    /* background: white; */
     padding: 10px 20px;
     text-align: left;
     border-radius: 6px;
-    /* box-shadow: 0px 0px 12px rgba(20,56,89,0.06), 0px 6px 18px rgba(20,56,89,0.09); */
+    /* border: dashed 1.5px #FFD3A9; */
+    /* box-shadow: 0px 0px 12px rgba(0,0,0,0.02), 0px 6px 18px rgba(0,0,0,0.03); */
 }
 .step-1 {
     margin-top: 40px;
 }
 
 .step-title {
+    font-size: 18px;
     font-weight: 500;
     color: #333;
 }
 .step-desc {
     font-weight: 400;
-    color: #999;
+    color: #333;
 }
 
 
@@ -445,13 +452,11 @@ button:hover .chevron {
 
 .how-bottom p {
     color: #999;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .how-button {
     margin: 0 auto;
-    background: white;
-    color: #333;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.06), 0px 10px 20px rgba(0,0,0,0.08);
 }
 
