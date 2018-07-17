@@ -30,7 +30,7 @@ h1 {
 h2 {
     font-size: 24px;
     font-weight: 400;
-    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'Radley', serif; */
 }
 
 .h2-white {
@@ -331,6 +331,7 @@ button:hover .chevron {
 
 .benefit-step h2 {
     font-size: 40px;
+    font-weight: 300;
     margin: 0;
     color: #FF9A33;
 }
@@ -670,41 +671,57 @@ input {
 
 
 
-/************************ Charlotte *********************/
-
-.charlotte {
-    width: 100vw;
-    height: 500px;
-    background: white;
-} 
-
-.charlotte-content {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 48px;
-}
-
-
-
 
 /************************ FAQ Highlights *********************/
 
 .faq-highlight {
     width: 100vw;
-    height: 400px;
-    background: #F8F8F8;
+    height: 500px;
+    background: #white;
 } 
 
 .faq-content {
     width: 1200px;
     margin: 0 auto;
     padding: 48px;
-    text-align: center;
 }
 
 .faq-content > p {
     color: #999;
 }
+
+
+
+/************************ Charlotte *********************/
+
+.charlotte {
+    width: 100vw;
+    height: 400px;
+    /* background-color: #f8f8f8; */
+    background-color: rgba(255,255,255,0.8);
+    background-image: url('../images/charlotte.png');
+    background-size: cover;
+    filter: grayscale(100%);
+    background-blend-mode: lighten;
+    background-position-y: 30%;
+} 
+
+.charlotte-content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 48px;
+    text-align: center;
+}
+
+.charlotte-content h3 {
+    /* font-family: 'Radley', serif; */
+}
+.charlotte-content p {
+    color: #999;   
+}
+
+
+
 
 
 
@@ -1171,7 +1188,7 @@ footer .wordmark-1, footer .wordmark-2 {
         height: auto;
         padding: 24px 16px;
         margin-bottom: 16px;
-        border-width: 1px;
+        border-width: 1.5px;
     }
     .slider-left {
         order: 2;
@@ -1179,7 +1196,7 @@ footer .wordmark-1, footer .wordmark-2 {
         height: auto;
         padding: 24px 16px;
         padding-bottom: 32px;
-        border-width: 1px;
+        border-width: 1.5px;
         /* border: none; */
     }
 
@@ -1212,21 +1229,25 @@ footer .wordmark-1, footer .wordmark-2 {
 
 
 
-    /****** Charlotte *****/
-    .charlotte-content {
-        width: calc(100% - 32px);
-        margin: 0 16px auto;
-        padding: 48px 0;
-    }
-
-
-
     /****** FAQ ******/
     .faq-content {
         width: calc(100% - 32px);
         margin: 0 16px auto;
         padding: 48px 0;
     }
+
+    /****** Charlotte *****/
+    .charlotte {
+        height: 300px;
+        background-position-x: 50%;
+    }
+
+    .charlotte-content {
+        width: calc(100% - 32px);
+        margin: 0 16px auto;
+        padding: 48px 0;
+    }
+
 
 
     /******* footer *******/
