@@ -1444,10 +1444,22 @@ footer .wordmark-1, footer .wordmark-2 {
     } */
 
     .faq-splash {
+        background-image: url(../images/desk-mobile.png);
         background-size: cover;
         background-position-x: 50%;
-        height: 320px;
+        height: 400px;
         padding: 16px;
+        /* padding-right: 120px; */
+        padding-right: 104px;
+        text-align: left;
+    }
+
+    .faq-content {
+        padding-top: 0;
+    }
+
+    .full-question {
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
 
     .faq-question h4 {
@@ -1458,6 +1470,14 @@ footer .wordmark-1, footer .wordmark-2 {
         padding-right: 20px;
     }
 
+    .faq-answer p {
+        margin: 0;
+        /* margin-top: 24px; */
+        padding: 20px;
+        padding-top: 0px;
+        /* color: #999; */
+        color: #757575;
+    }
 
     /* .faq-div1 > h2 {
         color: red;
