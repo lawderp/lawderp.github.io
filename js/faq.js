@@ -89,12 +89,14 @@ switchAccordion = function(e) {
 
 // for every question title (a), add necessary click events
 for (var i=0, len=accordionToggles.length; i<len; i++) {
-    if (touchSupported) {
-        accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
-    } else if(pointerSupported) {
-        accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);
-    } else {
-        accordionToggles[i].addEventListener('click', switchAccordion, false);
-    }
+    
+    accordionToggles[i].addEventListener('click', switchAccordion, false);
+    // if (touchSupported) {
+    //     accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
+    // } else if(pointerSupported) {
+    //     accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);
+    // } else {
+    //     accordionToggles[i].addEventListener('click', switchAccordion, false);
+    // }
 }
 
