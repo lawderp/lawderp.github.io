@@ -37,9 +37,6 @@ function mobileMenu() {
     }
 }
 
-/**** switching parallax for mobile ****/
-
-
 function isMobile() {
     var mq = window.matchMedia( "(max-width: 600px)" );
     if (mq.matches) {
@@ -64,7 +61,7 @@ var imageFrame = document.querySelector('.image-frame');
  
 function parallax() {
     var scrolltop = window.pageYOffset; 
-    var mq = window.matchMedia( "(max-width: 600px)" );
+    var mq = window.matchMedia( "(max-width: 1199px)" );
     if (mq.matches) {
         imageFrame.style.top = 0 + (scrolltop * .4) + 'px';
     } else {
