@@ -45,8 +45,6 @@ function isMobile() {
 }
 
 
-
-
 /************ parallax logic ************* */
 // Create cross browser requestAnimationFrame method:
 window.requestAnimationFrame = window.requestAnimationFrame
@@ -75,6 +73,69 @@ window.addEventListener('scroll', function(){ // on page scroll
 
 
 
+/*********************** Benefits logic ****************************/
+const benefits = document.querySelectorAll(".benefit");
+const benefitTexts = document.querySelectorAll(".benefit-text");
+const benefitEmpty = document.querySelector(".benefits-empty");
+console.log(benefitTexts);
+
+
+// get the target
+selectBenefit = (benefit) => {
+    // benefit.preventDefault();
+    var target = benefit.target;
+    if (target.nodeName === "SPAN") {
+        target = target.parentNode;
+        console.log(target);
+    }
+    benefits.forEach(function(benefit) {
+        benefit.classList.remove('selected');
+    });
+    benefitEmpty.style.display = 'none';
+    target.classList.add('selected');
+    // call function to show text
+    const idNumber = target.getAttribute('id').slice(-1);
+    console.log(idNumber);
+    showText(idNumber-1);
+}
+
+// show/hide text (takes in number)
+showText = (index) => {
+    // benefitTexts[index].style.display = 'block';
+    benefitTexts.forEach(function(text) {
+        text.classList.remove('selected');
+    });
+    benefitTexts[index].classList.add('selected');
+    benefitTexts[index].style.opacity = '1';
+}
+
+// add event listener
+benefits.forEach(function(benefit) {
+    benefit.addEventListener('click', function(benefit) {
+        selectBenefit(benefit);
+    }) 
+});
+
+
+/**** mobile ****/
+const revealButtons = document.querySelectorAll('.reveal-button');
+console.log(revealButtons);
+
+revealText = (button) => {
+    // if doesn't have visible class
+    // add visible class
+    if (button.parentNode.classList.contains('revealed')) {
+        button.parentNode.classList.remove('revealed');
+        button.innerHTML = "Show more";
+    } else {
+        button.parentNode.classList.add('revealed');
+        button.innerHTML = "Show less";
+    }
+
+}
+
+
+
 /*********************** Slider logic ****************************/
 const slider = document.querySelector(".slider");
 const price = document.querySelector(".price");
@@ -84,7 +145,6 @@ const savings = document.querySelector(".savings");
 
 // price.innerHTML = "$" + slider.value.toLocaleString(); // Display the default slider value
 price.innerHTML = "$500,000";
-
 
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
