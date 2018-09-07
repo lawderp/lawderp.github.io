@@ -341,12 +341,19 @@ button:hover .chevron {
     margin-right: 24px;
     height: 352px;
     border-radius: 6px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
 }
+
+
 .benefits-text {
     /* background: white; */
     width: 100%;
     padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: dashed 1px lightgrey;
+    border-radius: 6px;
 }
 
 .benefits-tabs > h5 {
@@ -415,7 +422,6 @@ input[type="radio"] {
 }
 
 
-
 .benefits-empty-wrapper {
     display: flex;
     justify-content: center;
@@ -424,7 +430,7 @@ input[type="radio"] {
 .benefits-empty {
     display: flex;
     text-align: center;
-    padding-top: 80px;
+    /* padding-top: 80px; */
 }
 .benefits-empty > .arrow-left {
     transform: scaleX(-1);
@@ -438,8 +444,8 @@ input[type="radio"] {
 }
 @keyframes jump { 
     0% { left: 12px; } 
-    25% {left: 0}
-    50% { left: 12px; } 
+    20% {left: 0}
+    40% { left: 12px; } 
     100% { left: 12px; } 
 }
 
