@@ -298,7 +298,7 @@ button:hover .chevron {
 
 
 
-/******* cash benefits **********/
+/********************** cash benefits ********************/
 
 .cash-benefits {
     position: static;
@@ -306,50 +306,172 @@ button:hover .chevron {
     background: #F8F8F8;
 }
 
-.cash-content {
+.benefits-content {
     width: 1200px;
     margin: 0 auto;
     padding-top: 208px;
-    padding-bottom: 48px;
+    padding-bottom: 120px;
+    text-align: center;
 }
 
-.h2-benefits {
-    color: #333;
-    font-weight: 400;
-    font-size: 28px;
-    /* margin-left: calc(200px - 120px); */
+.benefits-header {
+    padding: 48px;
+    padding-bottom: 0;
+}
+.benefits-header > h5 {
+    margin-bottom: 16px;
+}
+.benefits-header > h1 {
+    margin-top: 0;
 }
 
-.benefits {
+.interactive-benefits {
     display: flex;
-    justify-content: space-between;
-    margin-top: 56px;
-    margin-bottom: 104px;
+    padding: 0 64px;
+    text-align: left;
 }
 
-.benefit-step {
-    display: table-cell;
-    width: 330px;
-    height: 160px;
-    border-radius: 4px;
+.benefits-tabs {
+    background: white;
+    width: 400px;
+    padding: 24px;
+    flex-grow: 0;    
+    flex-shrink: 0;  
+    flex-basis: 400px; 
+    margin-right: 24px;
+    height: 352px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.benefits-text {
+    /* background: white; */
+    width: 100%;
+    padding: 24px;
 }
 
-.benefit-step h2 {
-    font-size: 40px;
-    font-weight: 300;
-    margin: 0;
-    color: #FF9A33;
-}
-.benefit-step h5 {
-    color: #FF9A33;
-    font-weight: 500;
+.benefits-tabs > h5 {
     margin-top: 8px;
+    text-align: center;
+
 }
-.benefit-step p {
-    color: #333;
+.benefit {
+    display: block;
+    background: white;
+    padding: 16px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+
+    transition: all 0.15s ease-out;
+}
+.benefit:hover {
+    background: #FFF7F0;
+}
+.benefit:hover .benefit-icon {
+    background: white;
+}
+.benefit:hover > span {
+    color: #414141;
+}
+
+.benefit.selected {
+    background: #FFF7F0;
+}
+
+.benefit-button {
+    display: flex;
+}
+.benefit-icon {
+    height: 48px;
+    width: 48px;
+    background: #F5F5F5;
+    border-radius: 50%;
+    margin-right: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    transition: all 0.15s ease-out;
+}
+.benefit.selected .benefit-icon {
+    background: white;
+}
+
+.benefit > span {
+    color: #414141;
+    /* color: #757575; */
+    transition: 0.15s color ease-out;
+}
+.benefit.selected > span {
+    color: #FF8000;
+}
+
+input[type="radio"] {
+    display: none;
 }
 
 
+
+.benefits-empty-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.benefits-empty {
+    display: flex;
+    text-align: center;
+    padding-top: 80px;
+}
+.benefits-empty > .arrow-left {
+    transform: scaleX(-1);
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 8px;
+    animation: jump 2s infinite;
+    animation-timing-function: ease-out;
+}
+@keyframes jump { 
+    0% { left: 12px; } 
+    25% {left: 0}
+    50% { left: 12px; } 
+    100% { left: 12px; } 
+}
+
+
+.benefits-empty > p {
+    margin: 0;
+    color: #757575;
+}
+
+.benefit-text {
+    display: none;
+    opacity: 0;
+
+}
+.benefit-text.selected {
+    display: block;
+}
+
+.benefit-text > h2 {
+    display: none;
+}
+.benefit-text > h4 {
+    margin-top: 8px;
+    line-height: 24px;
+    font-size: 18px;
+}
+.benefit-text > p {
+    font-size: 18px;
+}
+.benefit-text > button {
+    display: none;
+}
 
 
 
@@ -628,17 +750,25 @@ input {
 }
 
 .slider::-moz-range-thumb {
-    width: 100px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: white; /* Green background */
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 80px; /* Set a specific slider handle width */
+    height: 31px; /* Slider handle height */
+    /* background-color: white;  */
+    background: url('../icons/slider-icon-orange.png');
+    background-size: 100%;
     cursor: pointer; /* Cursor on hover */
     border-radius: 200px;
-    transition: all 0.15s ease-out;
+    transition: all 0.2s ease-out;
     border: none;
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.04), 0px 3px 8px rgba(0,0,0,0.08);
 }
 .slider::-moz-slider-thumb:hover {
     box-shadow: 0px 0px 6px rgba(0,0,0,0.06), 0px 2px 20px 2px rgba(254,164,27,0.15);
     /* background: #66C3CC; */
+}
+.slider::-moz-focus-outer {
+    border: 0;
 }
 
 
@@ -842,7 +972,7 @@ footer .wordmark-1, footer .wordmark-2 {
     margin-bottom: 24px;
     background: white;
     border-radius: 4px;
-    box-shadow: 0px 0px 6px rgba(0,0,0,0.04), 0px 3px 8px rgba(0,0,0,0.08);
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.04), 0px 3px 8px rgba(0,0,0,0.05);
     /* transform: translateY(0%); */
     transition: box-shadow 0.2s ease-out;
 }
@@ -1160,37 +1290,70 @@ footer .wordmark-1, footer .wordmark-2 {
 
     }
     
-    .cash-content {
+    .benefits-content {
         min-width: 0;
         width: calc(100% - 32px);
         margin: 0 16px auto;
         margin-top: 0px;
+        padding-bottom: 40px;
         /* margin-left: 24px; */
     }
-    
-    
-    .benefits {
-        /* display: flex; */
-        width: 100%;
-        flex-direction: column;
-        justify-content: space-around;
-        margin: 0;
-        margin-top: 48px;
+    .benefits-header {
+        padding: 0;
     }
     
-    .benefit-step {
-        width: 100%;
-        height: auto;
-        /* height: 160px; */
-        /* background: #75C9D1; */
-        /* line-height: 160px; */
-        margin-bottom: 24px;
+    .interactive-benefits {
+        padding: 0;
     }
 
-    .benefits h2 {
-        font-size: 32px;
-        font-weight: 400;
+    .benefits-tabs {
+        display: none;
     }
+    .benefits-empty-wrapper {
+        display: none;
+    }
+    .benefits-text {
+        padding: 0;
+    }
+
+    .benefit-text {
+        display: block;
+        opacity: 1;
+        margin-bottom: 64px;
+    }
+    .benefit-text > h2 {
+        display: block;
+    }
+    
+    .benefit-text > p {
+        display: none;
+    }
+
+    .benefit-text.revealed > p {
+        display: block;
+    }
+
+    .benefit-text > h4 {
+        font-size: 18px;
+        color: #757575;
+        
+    }
+    .benefit-text > p {
+        font-size: 16px;
+    }
+    .benefit-text > button {
+        display: inline-block;
+        text-align: left;
+        padding: 0;
+        background-color: rgba(0,0,0,0);
+        color: black;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+        color: #FF8000;
+    }
+    
+
 
 
      
@@ -1617,7 +1780,7 @@ footer .wordmark-1, footer .wordmark-2 {
 
     }
     
-    .cash-content {
+    .benefits-content {
         min-width: 0;
         width: calc(100% - 48px);
         margin: 0 24px auto;
@@ -1625,21 +1788,19 @@ footer .wordmark-1, footer .wordmark-2 {
         padding-top: 64px;
         /* margin-left: 24px; */
     }
-    
-    .benefit-step {
-        width: 30%;
-        height: auto;
+
+    .interactive-benefits {
+        padding: 0;
     }
 
-    .benefits {
-        margin-bottom: 0px;
+    .benefits-tabs {
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 320px;
+        flex-grow: 0;    
+        flex-shrink: 0;  
+        flex-basis: 320px; 
     }
-
-    .benefits h2 {
-        font-size: 28px;
-        font-weight: 400;
-    }
-
 
 
     /********** how ************/

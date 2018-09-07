@@ -86,26 +86,72 @@
 
 
         <div class="cash-benefits">
-            <div class="cash-content">
-                <h2 class="h2-benefits">All-cash is king.</h1>
-                <div class="benefits">
-                    <div class="benefit-step">
-                        <h2>97%</h2>
-                        <h5>more likely to win the bid</h5>
-                        <p>Selllers love the certainty of a Company X offer because it’s guaranteed to close. This is even better than investors who win with cash offers.</p>
-                    </div>
-                    <div class="benefit-step">
-                        <h2>5%</h2>
-                        <h5>savings</h5>
-                        <p>Because of the certainty it provides, Company X offers receive a 5% discount on average. So a $190,000 Novel Offer is as strong as a $200,000 offer with traditional financing.</p>
+            <div class="benefits-content">
+                <div class="benefits-header">
+                    <h5>Benefits</h5>
+                    <h1>Get your dream home, and a guaranteed close</h1>
+                </div>
+
+                <div class="interactive-benefits">
+
+           
+                    <div class="benefits-tabs">
+                        <h5>Why Novel Offer?</h5>
+                        <div class="benefit" id="benefit-1">
+                            <input type="radio" name="benefits">
+                            <span class="benefit-button">
+                                <div class="benefit-icon"><img src="icons/trophy-icon.svg"></div>
+                                Increase your chance of winning the bid
+                            </span>
+                        </div>
+                        <div class="benefit" id="benefit-2">
+                            <input type="radio" name="benefits">
+                            <span class="benefit-button">
+                                <div class="benefit-icon"><img src="icons/home-check.svg"></div>
+                                Guarantee your home will close
+                            </span>
+                        </div>
+                        <div class="benefit" id="benefit-3">
+                            <input type="radio" name="benefits">
+                            <span class="benefit-button">
+                                <div class="benefit-icon"><img src="icons/lock-icon.svg"></div>
+                                Protect yourself from financial setbacks
+                            </span>
+                        </div>
 
                     </div>
-                    <div class="benefit-step">
-                        <h2>X days</h2>
-                        <h5>faster to close</h5>
-                        <p>Can we get this stat? [Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut]</p>
+
+                    <div class="benefits-text">
+                        <div class="benefits-empty-wrapper">
+                            <div class="benefits-empty">
+                                <div class="arrow-left"><img src="icons/arrow-right.svg"></div>
+                                <p>Click on a benefit to learn more</p>
+                            </div>
+                        </div>
+                            
+                        <div class="benefit-text" id="benefit-text-1">
+                            <h2>Increase your chance of getting the house</h2>
+                            <h4>Gain the upper hand during negotiation, and save money with the power of a cash offer.</h4>
+                            <p>Sellers would prefer a cash offer over a traditional financed offer. With a cash offer, the chance of the financing falling through is taken out of the equation, and makes closing on the house drastically easier.</p>
+                            <p>The Dream Home Assurance Program basically acts as a cash backup if something goes wrong and the loan doesn’t close on time (or at all).</p>
+                            <button class="reveal-button" onclick="revealText(this)">Show more</button>
+                        </div>
+                        <div class="benefit-text" id="benefit-text-2">
+                            <h2>Guarantee your home will close</h2>
+                            <h4>Rent back from us while your loan is finalized. Don’t fret, you can still move in on time.</h4>
+                            <p>If you need extra time to secure your loan, and need a place to live, you can still move to your new home with our backup offer guarantee.</p>
+                            <p>With traditional financing, you would need to wait until all of the conditions of the loan were met befroe the loan could be closed. This program allows you to still move in to the house on time.</p>
+                            <button class="reveal-button" onclick="revealText(this)">Show more</button>
+                        </div>
+                        <div class="benefit-text" id="benefit-text-3">
+                            <h2>Protect yourself from financial setbacks</h2>
+                            <h4>Life happens, we understand. Don’t let an unexpected setback cause you to miss out on your dream.</h4>
+                            <p>If your financial situation suffers a temporary setback--job loss, divorce, illness, etc.--not to worry. You can rent the house from us until you resolve the issue and close on the loan.</p>
+                            <button class="reveal-button" onclick="revealText(this)">Show more</button>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -250,5 +296,7 @@
         </footer>
 
         <script src="js/index.js" async defer></script>
+        <!-- <script src="js/prefixfree.js" async defer></script> -->
+        
     </body>
 </html>
