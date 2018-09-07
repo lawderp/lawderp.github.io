@@ -76,18 +76,20 @@ window.addEventListener('scroll', function(){ // on page scroll
 /*********************** Benefits logic ****************************/
 const benefits = document.querySelectorAll(".benefit");
 const benefitTexts = document.querySelectorAll(".benefit-text");
-const benefitEmpty = document.querySelector(".benefits-empty");
-console.log(benefitTexts);
-
+const benefitEmpty = document.querySelector(".benefits-empty-wrapper");
 
 // get the target
 selectBenefit = (benefit) => {
-    // benefit.preventDefault();
     var target = benefit.target;
+    // adjust the target accordingly
     if (target.nodeName === "SPAN") {
         target = target.parentNode;
-        console.log(target);
+    } else if (target.classList.contains('benefit-icon')) {
+        target = target.parentNode.parentNode;
+    } else if (target.nodeName === "IMG") {
+        target=target.parentNode.parentNode.parentNode;
     }
+
     benefits.forEach(function(benefit) {
         benefit.classList.remove('selected');
     });
@@ -95,7 +97,6 @@ selectBenefit = (benefit) => {
     target.classList.add('selected');
     // call function to show text
     const idNumber = target.getAttribute('id').slice(-1);
-    console.log(idNumber);
     showText(idNumber-1);
 }
 
@@ -104,6 +105,8 @@ showText = (index) => {
     // benefitTexts[index].style.display = 'block';
     benefitTexts.forEach(function(text) {
         text.classList.remove('selected');
+        text.parentNode.style.display = 'block';
+        text.parentNode.style.border = 'none';
     });
     benefitTexts[index].classList.add('selected');
     benefitTexts[index].style.opacity = '1';
