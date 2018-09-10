@@ -120,6 +120,12 @@ benefits.forEach(function(benefit) {
 });
 
 
+// start on #2
+showText(1);
+benefitEmpty.style.display = 'none';
+
+
+
 /**** mobile ****/
 const revealButtons = document.querySelectorAll('.reveal-button');
 console.log(revealButtons);
