@@ -1319,6 +1319,7 @@ footer .wordmark-1, footer .wordmark-2 {
         display: none;
     }
     .benefits-text {
+        display: block;
         padding: 0;
     }
 
