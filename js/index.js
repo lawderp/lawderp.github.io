@@ -121,8 +121,8 @@ benefits.forEach(function(benefit) {
 
 
 // start on #2
-showText(1);
-benefitEmpty.style.display = 'none';
+// showText(1);
+// benefitEmpty.style.display = 'none';
 
 
 
@@ -149,7 +149,7 @@ revealText = (button) => {
 const slider = document.querySelector(".slider");
 const price = document.querySelector(".price");
 const discount = document.querySelector(".discount");
-const fee = document.querySelector(".fee");
+// const fee = document.querySelector(".fee");
 const savings = document.querySelector(".savings");
 
 // price.innerHTML = "$" + slider.value.toLocaleString(); // Display the default slider value
@@ -160,7 +160,7 @@ slider.oninput = function() {
     const rounded = Math.round(this.value/5000)*5000;
     price.innerHTML = "$" + rounded.toLocaleString();
     discount.innerHTML = "$" + Math.round(rounded*0.05).toLocaleString();
-    fee.innerHTML = "$" + Math.round(rounded*0.0195).toLocaleString();
-    savings.innerHTML = "$" + Math.round(rounded*0.0305).toLocaleString();
+    // fee.innerHTML = "$" + Math.round(rounded*0.0195).toLocaleString();
+    savings.innerHTML = "$" + Math.round(rounded*0.05 - 995.0).toLocaleString();
 
 }

@@ -815,6 +815,7 @@ input {
 }
 
 
+
 /*************
 
 
@@ -1332,6 +1333,7 @@ footer .wordmark-1, footer .wordmark-2 {
     .benefits-text {
         display: block;
         padding: 0;
+        border: none;
     }
 
     .benefit-text {
@@ -1369,6 +1371,8 @@ footer .wordmark-1, footer .wordmark-2 {
         font-weight: 500;
         font-size: 14px;
         color: #FF8000;
+        border: none;
+        outline: none;
     }
     
 
