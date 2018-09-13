@@ -265,9 +265,11 @@ li {
     padding: 20px;
 }
 
-button {
+.button {
     padding: 16px 40px;
     padding-right: 32px;
+    width: 180px;
+
     border-radius: 4px;
     outline: none;
     border: none;
@@ -276,6 +278,7 @@ button {
     align-items: center;
     color: white;
     cursor: pointer;
+    text-decoration: none;
     transition: all 0.18s ease-out;
 }
 
@@ -288,7 +291,7 @@ button {
     background: #ff8e20;
 }
 
-button:hover .chevron {
+.button:hover .chevron {
     transform: translateX(4px);
 }
 .chevron {
@@ -592,6 +595,10 @@ input[type="radio"] {
 .how-button {
     margin: 0 auto;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.06), 0px 10px 20px rgba(0,0,0,0.08);
+}
+
+.how-button:hover {
+    background: #ff8e20;
 }
 
 
