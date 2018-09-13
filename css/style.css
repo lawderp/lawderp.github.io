@@ -1065,6 +1065,10 @@ footer .wordmark-1, footer .wordmark-2 {
 .faq-answer.double > p:nth-child(1) {
     padding-bottom: 12px;
 }
+.faq-answer.triple > p:nth-child(2) {
+    padding-bottom: 12px;
+}
+
 .faq-section h2 {
     margin-top: 72px;  
     margin-bottom: 24px;
