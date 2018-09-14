@@ -1405,7 +1405,8 @@ footer .wordmark-1, footer .wordmark-2 {
     }
     
     .benefit-text > p {
-        display: none;
+        /* display: none; */
+        display: block;
     }
 
     .benefit-text.revealed > p {
@@ -1421,7 +1422,8 @@ footer .wordmark-1, footer .wordmark-2 {
         font-size: 16px;
     }
     .benefit-text > button {
-        display: inline-block;
+        /* display: inline-block; */
+        display: none;
         text-align: left;
         padding: 0;
         background-color: rgba(0,0,0,0);
