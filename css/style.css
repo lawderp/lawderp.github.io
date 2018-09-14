@@ -76,6 +76,10 @@ p {
     font-size: 25px;
 }
 
+a { 
+    text-decoration: none;
+}
+
 li > a {
     display: inline-block;
     position: relative;
@@ -157,6 +161,9 @@ li {
     display: none;
 }
 
+/* .right-nav > li:nth-child(1) {
+    display: none;
+} */
 
 
 /************************ Hero *********************/
@@ -212,7 +219,7 @@ li {
     z-index: 1;
 }
 
-.hero-frame p {
+.hero-text p {
     font-size: 18px;
     line-height: 28px;
     color: #333;
@@ -266,38 +273,68 @@ li {
 }
 
 .button {
-    padding: 16px 40px;
-    padding-right: 32px;
-    width: 180px;
+    padding: 16px 24px;
+    padding-right: 20px;
+    width:310px;
+    /* width: 260px; */
 
     border-radius: 4px;
     outline: none;
     border: none;
     background: #FF9A33;
+    background: #ff8e20;
     display: flex;
     align-items: center;
     color: white;
     cursor: pointer;
     text-decoration: none;
-    transition: all 0.18s ease-out;
+    transition: all 0.25s ease-out;
+}
+.button > p {
+    margin: 0;
+    color: white;
 }
 
 .splash-button {
     margin-top: 80px;
     box-shadow: 0px 0px 10px rgba(20,56,89,0.06), 0px 8px 20px rgba(24, 52, 78, 0.06);
 }
+.splash-button > p {
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.splash-button > .mm-logo-sm {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.chevron {
+    margin-left: 4px;
+    transition: all 0.2s ease-out;
+}
+
+
 .splash-button:hover {
     /* box-shadow: 0px 0px 15px rgba(20,56,89,0.20), 0px 12px 32px rgba(20,56,89,0.30); */
     background: #ff8e20;
+    background: #B82B35;
 }
 
 .button:hover .chevron {
     transform: translateX(4px);
 }
-.chevron {
-    margin-left: 4px;
-    transition: all 0.15s ease-out;
+
+p.mm-explainer {
+    font-size: 14px;
+    line-height: 20px;
+    width: 320px;
+    color: #757575;
+    margin-top: 20px;
 }
+
+
 
 
 
@@ -1278,6 +1315,18 @@ footer .wordmark-1, footer .wordmark-2 {
         font-size: 16px;
         line-height: 24px;
     }
+    p.mm-explainer {
+        font-size: 14px;
+        line-height: 20px;
+        width: 100%;
+    }
+
+    .splash-button {
+        width: 100%;
+        margin-top: 48px;
+    }
+    
+
 
     .right-frame {
         display: none;
