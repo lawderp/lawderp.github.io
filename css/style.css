@@ -281,14 +281,14 @@ li {
     border-radius: 4px;
     outline: none;
     border: none;
-    background: #FF9A33;
+    /* background: #FF9A33; */
     background: #ff8e20;
     display: flex;
     align-items: center;
     color: white;
     cursor: pointer;
     text-decoration: none;
-    transition: all 0.25s ease-out;
+    transition: all 0.2s ease-out;
 }
 .button > p {
     margin: 0;
@@ -312,7 +312,7 @@ li {
 
 .chevron {
     margin-left: 4px;
-    transition: all 0.2s ease-out;
+    transition: all 0.18s ease-out;
 }
 
 
