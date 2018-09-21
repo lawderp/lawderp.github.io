@@ -199,7 +199,7 @@ li {
     width: 100%;
     height: 100%;
     /* background-image: url('../images/kitchen-hd.png'); */
-    background: linear-gradient(rgba(255,255,255,0.8) 5%, rgba(255,255,255,0) 20%, rgba(255,255,255,0)), url("../images/kitchen-hd.png");
+    background: linear-gradient(rgba(255,255,255,0.8) 5%, rgba(255,255,255,0) 20%, rgba(255,255,255,0)), url("../images/Optimized-kitchen-hd.png");
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -334,6 +334,16 @@ p.mm-explainer {
     width: 320px;
     color: #757575;
     margin-top: 20px;
+}
+.mm-explainer > a {
+    color: #757575;
+    text-decoration: underline;
+    text-decoration-color: lightgrey;
+    transition: all 0.15s ease-out;
+}
+.mm-explainer > a:hover {
+    color: #B82B35;
+    text-decoration-color: #B82B35;
 }
 
 
